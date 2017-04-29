@@ -7,29 +7,7 @@
 
 ## ---------------------------------------------------------------------
 
-## map for Zg and using bins (too large to run on lupus)
-map1<-seq(0.006,1.505,0.001)
-## add unlinked loci
-for(i in 1:10){
-    map1<-c(map1,seq(max(map1)+1.001,max(map1)+1.010,0.001))
-}
-
-map1<-cbind(map1,rep(0,length(map1)))
-
-map1[map1[,1]==0.25,2]<-1 ## assortative mating locus
-map1[map1[,1]==0.75,2]<-2 ## selected locus 1
-map1[map1[,1]==1.25,2]<-3 ## selected locus 2
-
-## plot(map1[,1],type="l")
-## abline(v=which(map1[,2]==1),lty=3)
-## abline(v=which(map1[,2]>=2),lty=2)
-
-write.table(map1,file="map1.txt",quote=FALSE,col.names=FALSE,row.names=FALSE)
-
-
-## -------------------------------
-
-## map for Zg and using bins (too large to run on lupus)
+## map for Zg and using bins (too large to run off cluster)
 map2<-seq(0.006,1.505,0.001)
 ## add unlinked loci
 for(i in 1:10){
@@ -69,7 +47,7 @@ write.table(map2c,file="map2c.txt",quote=FALSE,col.names=FALSE,row.names=FALSE)
 
 ## -------------------------------
 
-## map for Zg and using bins (too large to run on lupus)
+## map for Zg and using bins (too large to run off cluster)
 ## no assortative mating locus but instead third locus under selection
 map2S<-seq(0.006,1.505,0.001)
 ## add unlinked loci
@@ -107,30 +85,4 @@ map2cS[map2cS[,1]==1.25,2]<-3 ## selected locus 2
 ## abline(v=which(map2cS[,2]>=2),lty=2)
 
 write.table(map2cS,file="map2cS.txt",quote=FALSE,col.names=FALSE,row.names=FALSE)
-
-
-## -------------------------------
-
-## map for Zg and using bins (too large to run on lupus)
-map3<-seq(0.006,1.505,0.001)
-## add unlinked loci
-for(i in 1:10){
-    map3<-c(map3,seq(max(map3)+1.001,max(map3)+1.010,0.001))
-}
-
-map3<-cbind(map3,rep(0,length(map3)))
-
-map3[map3[,1]==0.25,2]<-1 ## assortative mating locus
-map3[map3[,1]==0.75,2]<-2 ## selected locus 1
-map3[map3[,1]==0.85,2]<-3 ## selected locus 2
-
-## plot(map3[,1],type="l")
-## abline(v=which(map3[,2]==1),lty=3)
-## abline(v=which(map3[,2]>=2),lty=2)
-
-write.table(map3,file="map3.txt",quote=FALSE,col.names=FALSE,row.names=FALSE)
-
-
-## -------------------------------
-
 
