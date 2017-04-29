@@ -15,6 +15,6 @@ or `./asmatsel -i map2S.txt -l 1600 -u 0 -s 0.8 -o run2S_s08.out >& run2S_s08.lo
 input files (map2.txt and map2S.txt): 
 can be generated with mkinfile.R
 
-make pdf of results:
+make plot of results:
 plotAnmatselMultSets.R
-(e.g., using pre-processed output data in run2_run2S.RData)
+(e.g., using pre-processed output data run2_run2S.RData to make Phase3.pdf)
