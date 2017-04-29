@@ -1,4 +1,4 @@
-## similar to plots in 'plotAnmatselOut.R', but for multiple settings
+## plot results from asmatsel simulations for multiple settings
 ## ------------------------------------------------------------------
 
 ## ## ## concatenate output from batch runs (single simulation per run) in bash
@@ -12,11 +12,10 @@
 
 
 ## ------
-setwd("~/Documents/Rosalia")
 
 load("run2_run2S.RData")
 
-## >>> skip this
+## >>> skip this when using load()
 ## -----------------------------------------------------------------------
 runnames<-c("run2_a09_all","run2_a099_all","run2S_s05_all","run2S_s08_all")
 mapnames<-c("map2.txt","map2.txt","map2S.txt","map2S.txt")
@@ -25,10 +24,11 @@ strengthA<-c("0.9","0.99","0.0","0.0")
 strengthS<-c("0.5","0.5","0.5","0.8")
 xaxlablim<-c(0.0,1.5) ## specify labels to appear on x axis in plot
 
-coltab<-rbind(c("gray90","#084081","white"), ## "darkslateblue"
-              c("gray90","#084081","white"), ## "darkslateblue"
-              c("gray90","#00441B","white"), ## "seagreen"
-              c("gray90","#00441B","white")) ## "seagreen"
+## color gradient for four simulations (from, to, background)
+coltab<-rbind(c("gray90","#084081","white"), 
+              c("gray90","#084081","white"), 
+              c("gray90","#00441B","white"), 
+              c("gray90","#00441B","white")) 
 
 nsets<-length(runnames)
 
