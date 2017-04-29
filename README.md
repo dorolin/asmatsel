@@ -11,9 +11,8 @@ to see options, type ./asmatsel without any  arguments
 example for running a simulation:
 `./asmatsel -i map2S.txt -l 1600 -u 0 -s 0.8 -o run2S_s08.out >& run2S_s08.log &`
 
-input files: 
+input files (map2.txt and map2S.txt): 
 can be generated with mkinfile.R
-(map2.txt and map2S.txt)
 
 make pdf of results:
 plotAnmatselMultSets.R
