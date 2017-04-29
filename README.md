@@ -16,5 +16,5 @@ input files (map2.txt and map2S.txt):
 can be generated with mkinfile.R
 
 make plot of results:
-plotAnmatselMultSets.R
+plotAsmatselMultSets.R
 (e.g., using pre-processed output data run2_run2S.RData to make Phase3.pdf)
