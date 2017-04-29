@@ -8,8 +8,9 @@ files: main.C func.C asmatsel.H; to compile, try
 
 to see options, type ./asmatsel without any  arguments
 
-example for running a simulation:
-`./asmatsel -i map2S.txt -l 1600 -u 0 -s 0.8 -o run2S_s08.out >& run2S_s08.log &`
+examples for running a simulation:
+`./asmatsel -i map2.txt -l 1600 -u 0 -a 0.9 -o run2_a09.out >& run2_a09.log &`
+or `./asmatsel -i map2S.txt -l 1600 -u 0 -s 0.8 -o run2S_s08.out >& run2S_s08.log &`
 
 input files (map2.txt and map2S.txt): 
 can be generated with mkinfile.R
