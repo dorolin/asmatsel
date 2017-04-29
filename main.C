@@ -5,7 +5,6 @@
 // g++ -Wall -O2 -o asmatsel main.C func.C -lm -lgsl -lgslcblas
 
 // run:
-// ./asmatsel -i ./map1.txt -l 420 -x 1 -o ./test1.out
 // ./asmatsel -i ./map2c.txt -l 700 -x 1 -z 1 -b 10 -u 0 -o ./test2.out
 
 
