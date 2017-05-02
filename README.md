@@ -16,4 +16,4 @@ can be generated with mkinfile.R
 
 to make plot of results:
 plotAsmatselMultSets.R
-(e.g., using pre-processed output data run2_run2S.RData to make Phase3.pdf)
+(e.g., to make Phase3.pdf)
